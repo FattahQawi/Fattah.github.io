@@ -4,105 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Fattah - Web Developer & UI/UX Designer</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Fattah</a>
-        
-
-
+        <a href="#" class="logo animate__animated animate__fadeIn">Fattah</a>
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">Skills</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <!-- <div class="animation"></div> -->
         </nav>
     </header>
-    <section class="home">
-        <div class="home-image">
-            <img src="../fattah.png">
-        </div>
-
-        <div class="home-content">
-            <h1>Hello I'm Fattah</h1>
-            <h3>Frontend Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptate ratione? Ducimus omnis
-                dignissimos reiciendis debitis culpa, atque, reprehenderit molestiae recusandae unde aspernatur
-                cupiditate cumque, mollitia fugit nemo est expedita.</p>
-
-
+    
+    <section id="home" class="home">
+        <div class="home-content animate__animated animate__fadeInLeft">
+            <h1>Hi, I'm <span>Fattah</span></h1>
+            <h3><span class="multiple-text"></span></h3>
+            <p>Final year student at SMK Taruna Bhakti majoring in Software Engineering. 
+                Passionate about Web Development and UI/UX Design. Continuously exploring 
+                the latest design trends and technologies to enhance my skills.</p>
 
             <div class="home-sci">
-                <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661741489&extra_1=s%7Cc%7C513502597352%7Ce%7Cfacebook%7C&placement=&creative=513502597352&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661741489%26adgroupid%3D65609010858%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D9127201%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=Cj0KCQjwwYSwBhDcARIsAOyL0fg3wkLd-G0sPlYQx8EuOEuKAJfxwRATJiEvVddH3RWEww5pWFCa2OgaAv7REALw_wcB"><i class='bx bxl-facebook'></i></a>
-                <a href="https://twitter.com/i/flow/single_sign_on"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.instagram.com/fattah4578"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://web.whatsapp.com"><i class='bx bxl-whatsapp-square'></i></a>
-
+                <a href="https://wa.me/089655225892" target="_blank" title="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                <!-- <a href="mailto:fattahqawi2322@gmail.com" target="_blank" title="Email"><i class='bx bx-envelope'></i></a> -->
+                <a href="https://www.instagram.com/fattah4578/" target="_blank" title="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/FattahQawi" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <div class="btn-container">
+                <a href="#contact" class="btn btn-secondary">Hire Me <i class='bx bx-paper-plane'></i></a>
+            </div>
         </div>
         
-       
+        <div class="home-image animate__animated animate__fadeInRight">
+            <div class="glowing-circle">
+                <img src="fattah.png" alt="Profile Image">
+            </div>
+        </div>
     </section>
-
 
     <section id="skills" class="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Developer</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span>HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Laravel</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-box">
+                <i class='bx bx-palette'></i>
+                <h3>UI/UX Design</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span>Figma</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-img">
+            <div class="circle-spin">
+                <img src="fattah.png" alt="About Image">
+            </div>
+        </div>
         
-        <h2 class="Im Fattah">Skills</h2>
-        <div class="skills-content">
-
-            <div class="skills-box">
-                <h3>Web Designer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum incidunt possimus ullam quia nostrum fugit aut eius, eveniet sequi corrupti impedit quas, eaque esse debitis soluta, laborum et omnis.</p>
-            </div>
-            <div class="skills-box">
-                <h3>Game develover</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum incidunt possimus ullam quia nostrum fugit aut eius, eveniet sequi corrupti impedit quas, eaque esse debitis soluta, laborum et omnis.</p>
-            </div>
-            <div class="skills-box">
-                <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum incidunt possimus ullam quia nostrum fugit aut eius, eveniet sequi corrupti impedit quas, eaque esse debitis soluta, laborum et omnis.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="About">
-
-        <div class="AboutGambar">
-            <img src="Ptah.png" class="fattahabout">
-        </div>
-
-        <div class="AboutKonten">
+        <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Front <span>End</span></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nulla itaque velit molestias quis atque! Et aspernatur mollitia facilis. Culpa atque id ipsum velit non tenetur nobis debitis beatae magni.</p>
+            <h3>Web Developer & UI/UX Designer</h3>
+            <p>Saya siswa tingkat akhir di SMK Taruna Bhakti dengan jurusan RPL. 
+                Saya sangat tertarik di bidang Web Development dan UI/UX Design. 
+                dan saya terus mengeksplorasi tren desain dan teknologi terbaru untuk 
+                meningkatkan kemampuan dan kontribusi saya di dunia teknologi.</p>
+            
+            
         </div>
-
     </section>
 
-    <section class="contact-form">
-       <h2 class="contact-me">Contact</h2> 
-       <form action="">
-        <div class="input-box">
-            <input class="Nama Lengkap" type="text" placeholder="Full Name">
-            <input type="Email" placeholder="Your Email">
-        </div>
-        <div class="input-box">
-            <input type="number" placeholder="Phone Number">
-            <input type="text" placeholder="Subject">
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-        <input class="btn-1" type="Submit" value="Submit">
-       </form>
+    <section id="contact" class="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <i class='bx bx-user'></i>
+                </div>
+                <div class="input-field">
+                    <input type="email" placeholder="Email Address" required>
+                    <i class='bx bx-envelope'></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number">
+                    <i class='bx bx-phone'></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <i class='bx bx-message-detail'></i>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <i class='bx bx-edit'></i>
+            </div>
+            <button type="submit" class="btn">Send Message <i class='bx bx-send'></i></button>
+        </form>
     </section>
+    
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Fattah | All Rights Reserved.</p>
+        </div>
+        
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

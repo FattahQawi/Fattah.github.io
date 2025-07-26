@@ -17,9 +17,9 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <!-- <div class="animation"></div> -->
         </nav>
     </header>
     
@@ -33,7 +33,6 @@
 
             <div class="home-sci">
                 <a href="https://wa.me/089655225892" target="_blank" title="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
-                <!-- <a href="mailto:fattahqawi2322@gmail.com" target="_blank" title="Email"><i class='bx bx-envelope'></i></a> -->
                 <a href="https://www.instagram.com/fattah4578/" target="_blank" title="Instagram"><i class='bx bxl-instagram-alt'></i></a>
                 <a href="https://github.com/FattahQawi" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
             </div>
@@ -44,7 +43,7 @@
         
         <div class="home-image animate__animated animate__fadeInRight">
             <div class="glowing-circle">
-                <img src="Fattah.png" alt="Profile Image">
+                <img src="Fattah.png" alt="Profile Image" width="300px">
             </div>
         </div>
     </section>
@@ -58,13 +57,18 @@
                 <div class="skill-list">
                     <div class="skill-item">
                         <span>HTML/CSS</span>
-                        </div>
                     </div>
                     <div class="skill-item">
                         <span>PHP</span>
                     </div>
                     <div class="skill-item">
                         <span>Laravel</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Flutter</span>
                     </div>
                 </div>
             </div>
@@ -75,11 +79,69 @@
                 <div class="skill-list">
                     <div class="skill-item">
                         <span>Figma</span>
-                        </div>
                     </div>
                     <div class="skill-item">
                         <span>Adobe Illustrator</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2 class="heading">My <span>Projects</span></h2>
+        
+        <div class="portfolio-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>SISFO SARPRAS</h3>
+                    <div class="project-tags">
+                        <span>Web Development</span>
+                        <span>System</span>
+                    </div>
+                </div>
+                <p class="project-description">Sistem Informasi Sarana & Prasarana untuk manajemen fasilitas institusi pendidikan.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>PORTOFOLIO WEBSITE</h3>
+                    <div class="project-tags">
+                        <span>Web Design</span>
+                        <span>Responsive</span>
+                    </div>
+                </div>
+                <p class="project-description">Website portofolio responsif untuk menampilkan profil, karya, dan keahlian profesional.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>APLIKASI WEB BERITA</h3>
+                    <div class="project-tags">
+                        <span>Web App</span>
+                        <span>CMS</span>
+                    </div>
+                </div>
+                <p class="project-description">Platform berita online dengan fitur CRUD untuk manajemen konten oleh pengguna.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
                 </div>
             </div>
         </div>
@@ -99,37 +161,35 @@
                 Saya sangat tertarik di bidang Web Development dan UI/UX Design. 
                 dan saya terus mengeksplorasi tren desain dan teknologi terbaru untuk 
                 meningkatkan kemampuan dan kontribusi saya di dunia teknologi.</p>
-            
-            
         </div>
     </section>
 
     <section id="contact" class="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
         
-        <form action="#">
+        <form action="https://formsubmit.co/fattahqawi2322@gmail.com" method="POST" >
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" required name="fullName">
                     <i class='bx bx-user'></i>
                 </div>
                 <div class="input-field">
-                    <input type="email" placeholder="Email Address" required>
+                    <input type="email" placeholder="Email Address" required name="email">
                     <i class='bx bx-envelope'></i>
                 </div>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number">
+                    <input type="number" placeholder="Mobile Number" name="nomor-telepon">
                     <i class='bx bx-phone'></i>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" placeholder="Email Subject" required name="pesanEmail">
                     <i class='bx bx-message-detail'></i>
                 </div>
-            </div>
+            </div> 
             <div class="textarea-field">
-                <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea cols="30" rows="10" placeholder="Your Message" required name="pesan"></textarea>
                 <i class='bx bx-edit'></i>
             </div>
             <button type="submit" class="btn">Send Message <i class='bx bx-send'></i></button>
